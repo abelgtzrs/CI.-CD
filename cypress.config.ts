@@ -9,6 +9,8 @@ export default defineConfig({
       bundler: "vite",
       viteConfig,
     },
+    specPattern: "cypress/component/**/*.cy.{js,jsx,ts,tsx}",
+    supportFile: "cypress/support/component.js",
   },
 
   e2e: {

@@ -1,4 +1,4 @@
-name: Run Cypress Tests
+name: Run Cypress Component Tests
 
 on:
   pull_request:
@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout Code
         uses: actions/checkout@v3
 
       - name: Use Node.js
@@ -18,8 +18,8 @@ jobs:
         with:
           node-version: 18
 
-      - name: Install dependencies
+      - name: Install Dependencies
         run: npm ci
 
-      - name: Run Cypress component tests
+      - name: Run Cypress Component Tests
         run: npm run test:component
