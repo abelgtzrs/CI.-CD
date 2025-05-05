@@ -36,7 +36,7 @@ describe("Quiz Component", () => {
     cy.mount(<Quiz />);
     cy.get("button").contains("Start Quiz").click();
 
-    // Answer questions
+    // Answer the questions
     cy.get("button").contains("1").click();
 
     // Restart the quiz
